@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coradot — The agreement-to-close operating system for brokerages</title>
+<meta name="description" content="Coradot is the agreement-to-close operating system for brokerages: one governed workspace for listing and purchase files, approved forms, signatures, deadlines and broker oversight.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M25 8.5A11 11 0 1 0 25 23.5' fill='none' stroke='%231A2B4A' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='8.5' r='2.6' fill='%230D7A7A'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%230D7A7A'/%3E%3Ccircle cx='25' cy='23.5' r='2.6' fill='%231A2B4A'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://coradot.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coradot">
+<meta property="og:title" content="Coradot — The agreement-to-close operating system for brokerages">
+<meta property="og:description" content="One governed workspace for listing and purchase files: approved forms, signatures, deadlines and broker oversight.">
+<meta property="og:url" content="https://coradot.com/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FAF7F1}
+a{color:#0D7A7A}a:hover{color:#0A5F5F}
+*{box-sizing:border-box}
+input,select,textarea{font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid #14A3A3;outline-offset:1px}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .2s}
+@keyframes cdpulse{0%{box-shadow:0 0 0 0 rgba(20,163,163,.55)}70%{box-shadow:0 0 0 10px rgba(20,163,163,0)}100%{box-shadow:0 0 0 0 rgba(20,163,163,0)}}
+.cd-live{animation:cdpulse 2s infinite}
+@media (prefers-reduced-motion: reduce){.cd-live{animation:none}}
+</style>
+<style>[hidden]{display:none !important}html{scroll-behavior:smooth}</style>
+</head>
+<body>
+
+<div style="font-family: Figtree, system-ui, sans-serif; color: #0F1C33; background: #FAF7F1; width: 100%; min-height: 100vh">
+
+<!-- NAV -->
+<header style="background: #0F1C33; border-bottom: 1px solid rgba(255,255,255,0.08)">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF">
+<svg role="img" aria-label="Coradot" width="181" height="34" style="display: block" xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 534.2 100.5"><g transform="translate(-15.12 -15.12) scale(4.0868)"><path d="M25 8.5A11 11 0 1 0 25 23.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"></path><circle cx="25" cy="8.5" r="2.6" fill="#14A3A3"></circle><circle cx="16" cy="16" r="2.6" fill="#14A3A3"></circle><circle cx="25" cy="23.5" r="2.6" fill="#FFFFFF"></circle></g><path d="M172.6681795121951 13.46799999999999Q179.2681795121951 13.46799999999999 183.5181795121951 15.417999999999992Q187.7681795121951 17.367999999999995 191.06817951219512 19.96799999999999Q193.06817951219512 21.46799999999999 194.11817951219513 20.31799999999999Q195.1681795121951 19.167999999999992 195.56817951219512 14.867999999999995H197.8681795121951Q197.6681795121951 18.667999999999992 197.56817951219512 24.167999999999992Q197.4681795121951 29.667999999999992 197.4681795121951 38.66799999999999H195.1681795121951Q194.56817951219512 34.16799999999999 193.86817951219513 31.11799999999999Q193.1681795121951 28.06799999999999 191.9181795121951 25.86799999999999Q190.6681795121951 23.667999999999992 188.4681795121951 21.667999999999992Q185.7681795121951 18.667999999999992 182.0181795121951 17.21799999999999Q178.2681795121951 15.767999999999986 174.1681795121951 15.767999999999986Q168.9681795121951 15.767999999999986 165.1181795121951 18.517999999999986Q161.2681795121951 21.267999999999986 158.7181795121951 26.017999999999986Q156.1681795121951 30.767999999999986 154.9181795121951 37.067999999999984Q153.6681795121951 43.36799999999999 153.6681795121951 50.46799999999999Q153.6681795121951 57.76799999999999 155.0181795121951 64.01799999999999Q156.3681795121951 70.26799999999999 159.0181795121951 74.91799999999999Q161.6681795121951 79.568 165.61817951219513 82.16799999999999Q169.56817951219512 84.76799999999999 174.7681795121951 84.76799999999999Q178.4681795121951 84.76799999999999 182.3681795121951 83.368Q186.2681795121951 81.96799999999999 188.7681795121951 79.068Q192.06817951219512 76.06799999999998 193.2681795121951 71.91799999999998Q194.4681795121951 67.76799999999999 195.1681795121951 60.867999999999995H197.4681795121951Q197.4681795121951 70.26799999999999 197.56817951219512 76.01799999999999Q197.6681795121951 81.76799999999999 197.8681795121951 85.66799999999999H195.56817951219512Q195.1681795121951 81.368 194.2181795121951 80.268Q193.2681795121951 79.16799999999999 191.06817951219512 80.568Q187.3681795121951 83.16799999999999 183.2181795121951 85.118Q179.06817951219512 87.068 172.56817951219512 87.068Q162.3681795121951 87.068 154.66817951219508 82.768Q146.9681795121951 78.46799999999999 142.7181795121951 70.368Q138.4681795121951 62.26799999999999 138.4681795121951 50.86799999999999Q138.4681795121951 39.66799999999999 142.8681795121951 31.26799999999999Q147.2681795121951 22.867999999999988 154.9681795121951 18.16799999999999Q162.6681795121951 13.46799999999999 172.6681795121951 13.46799999999999ZM233.06817951219512 32.56799999999999Q239.96817951219512 32.56799999999999 245.31817951219512 35.31799999999999Q250.6681795121951 38.06799999999999 253.81817951219512 44.06799999999999Q256.9681795121951 50.06799999999999 256.9681795121951 59.867999999999995Q256.9681795121951 69.66799999999999 253.81817951219512 75.66799999999999Q250.6681795121951 81.66799999999999 245.31817951219512 84.368Q239.96817951219512 87.068 233.06817951219512 87.068Q226.1681795121951 87.068 220.7681795121951 84.368Q215.36817951219513 81.66799999999999 212.2681795121951 75.66799999999999Q209.1681795121951 69.66799999999999 209.1681795121951 59.867999999999995Q209.1681795121951 50.06799999999999 212.2681795121951 44.06799999999999Q215.36817951219513 38.06799999999999 220.7681795121951 35.31799999999999Q226.1681795121951 32.56799999999999 233.06817951219512 32.56799999999999ZM233.06817951219512 34.56799999999999Q228.36817951219513 34.56799999999999 225.41817951219514 40.51799999999999Q222.46817951219512 46.46799999999999 222.46817951219512 59.867999999999995Q222.46817951219512 73.26799999999999 225.41817951219514 79.16799999999999Q228.36817951219513 85.068 233.06817951219512 85.068Q237.6681795121951 85.068 240.6681795121951 79.16799999999999Q243.6681795121951 73.26799999999999 243.6681795121951 59.867999999999995Q243.6681795121951 46.46799999999999 240.6681795121951 40.51799999999999Q237.6681795121951 34.56799999999999 233.06817951219512 34.56799999999999ZM297.96817951219515 32.56799999999999Q301.0681795121951 32.56799999999999 303.1181795121951 33.867999999999995Q305.16817951219514 35.16799999999999 306.16817951219514 37.16799999999999Q307.16817951219514 39.16799999999999 307.16817951219514 41.36799999999999Q307.16817951219514 44.66799999999999 305.21817951219515 46.867999999999995Q303.26817951219516 49.06799999999999 300.0681795121951 49.06799999999999Q297.0681795121951 49.06799999999999 295.16817951219514 47.46799999999999Q293.26817951219516 45.86799999999999 293.26817951219516 43.06799999999999Q293.26817951219516 40.56799999999999 294.51817951219516 38.867999999999995Q295.76817951219516 37.16799999999999 297.3681795121951 36.16799999999999Q296.26817951219516 35.56799999999999 294.8681795121951 35.76799999999999Q292.46817951219515 35.96799999999999 290.46817951219515 37.46799999999999Q288.46817951219515 38.96799999999999 287.0681795121951 41.16799999999999Q285.66817951219514 43.36799999999999 284.91817951219514 45.86799999999999Q284.16817951219514 48.36799999999999 284.16817951219514 50.66799999999999V75.368Q284.16817951219514 80.26799999999999 286.66817951219514 81.91799999999999Q289.16817951219514 83.568 293.96817951219515 83.568V85.66799999999999Q291.66817951219514 85.568 287.3181795121951 85.41799999999999Q282.96817951219515 85.26799999999999 278.26817951219516 85.26799999999999Q274.3681795121951 85.26799999999999 270.51817951219516 85.41799999999999Q266.66817951219514 85.568 264.76817951219516 85.66799999999999V83.568Q268.46817951219515 83.568 270.01817951219516 82.068Q271.5681795121951 80.568 271.5681795121951 76.368V44.86799999999999Q271.5681795121951 40.36799999999999 270.1181795121951 38.21799999999999Q268.66817951219514 36.06799999999999 264.76817951219516 36.06799999999999V33.96799999999999Q267.96817951219515 34.26799999999999 270.96817951219515 34.26799999999999Q274.66817951219514 34.26799999999999 278.01817951219516 33.91799999999999Q281.3681795121951 33.56799999999999 284.16817951219514 32.86799999999999V43.26799999999999Q285.3681795121951 40.46799999999999 287.3181795121951 38.06799999999999Q289.26817951219516 35.66799999999999 292.01817951219516 34.117999999999995Q294.76817951219516 32.56799999999999 297.96817951219515 32.56799999999999ZM325.7681795121951 86.368Q321.4681795121951 86.368 318.4681795121951 84.71799999999999Q315.4681795121951 83.068 313.9681795121951 80.21799999999999Q312.4681795121951 77.368 312.4681795121951 73.868Q312.4681795121951 69.56799999999998 314.4681795121951 66.81799999999998Q316.4681795121951 64.06799999999998 319.61817951219507 62.417999999999985Q322.7681795121951 60.76799999999999 326.2681795121951 59.61799999999999Q329.7681795121951 58.46799999999999 332.86817951219507 57.41799999999999Q335.9681795121951 56.367999999999995 337.9681795121951 54.96799999999999Q339.9681795121951 53.56799999999999 339.9681795121951 51.267999999999994V43.96799999999999Q339.9681795121951 40.76799999999999 339.0181795121951 38.71799999999999Q338.0681795121951 36.66799999999999 336.2181795121951 35.617999999999995Q334.3681795121951 34.56799999999999 331.5681795121951 34.56799999999999Q329.4681795121951 34.56799999999999 327.16817951219514 35.16799999999999Q324.8681795121951 35.76799999999999 323.3681795121951 37.46799999999999Q325.9681795121951 38.16799999999999 327.41817951219514 40.06799999999999Q328.8681795121951 41.96799999999999 328.8681795121951 44.66799999999999Q328.8681795121951 47.767999999999994 326.8181795121951 49.517999999999994Q324.7681795121951 51.267999999999994 321.6681795121951 51.267999999999994Q318.3681795121951 51.267999999999994 316.66817951219514 49.16799999999999Q314.9681795121951 47.06799999999999 314.9681795121951 44.26799999999999Q314.9681795121951 41.46799999999999 316.36817951219507 39.61799999999999Q317.7681795121951 37.76799999999999 320.2681795121951 36.26799999999999Q322.7681795121951 34.56799999999999 326.66817951219514 33.56799999999999Q330.5681795121951 32.56799999999999 335.1681795121951 32.56799999999999Q339.5681795121951 32.56799999999999 342.9681795121951 33.51799999999999Q346.3681795121951 34.46799999999999 348.7681795121951 36.86799999999999Q351.16817951219514 39.16799999999999 351.8681795121951 42.56799999999999Q352.5681795121951 45.96799999999999 352.5681795121951 50.86799999999999V78.26799999999999Q352.5681795121951 80.76799999999999 353.16817951219514 81.81799999999998Q353.7681795121951 82.868 355.0681795121951 82.868Q356.0681795121951 82.868 356.9681795121951 82.368Q357.8681795121951 81.868 358.9681795121951 80.96799999999999L360.0681795121951 82.66799999999999Q357.8681795121951 84.368 355.4681795121951 85.368Q353.0681795121951 86.368 349.66817951219514 86.368Q346.1681795121951 86.368 344.11817951219507 85.368Q342.0681795121951 84.368 341.11817951219507 82.46799999999999Q340.1681795121951 80.568 340.0681795121951 77.96799999999999Q337.6681795121951 81.96799999999999 334.1681795121951 84.16799999999999Q330.6681795121951 86.368 325.7681795121951 86.368ZM331.7681795121951 80.76799999999999Q334.1681795121951 80.76799999999999 336.2181795121951 79.46799999999999Q338.2681795121951 78.16799999999999 339.9681795121951 75.56799999999998V55.367999999999995Q338.9681795121951 56.867999999999995 337.11817951219507 58.06799999999999Q335.2681795121951 59.26799999999999 333.16817951219514 60.46799999999999Q331.0681795121951 61.66799999999999 329.2181795121951 63.21799999999999Q327.3681795121951 64.76799999999999 326.1181795121951 67.01799999999999Q324.8681795121951 69.26799999999999 324.8681795121951 72.76799999999999Q324.8681795121951 76.66799999999999 326.7681795121951 78.71799999999999Q328.6681795121951 80.76799999999999 331.7681795121951 80.76799999999999ZM412.0681795121951 7.367999999999981V74.76799999999999Q412.0681795121951 79.26799999999999 413.5681795121951 81.41799999999999Q415.0681795121951 83.568 418.8681795121951 83.568V85.66799999999999Q415.7681795121951 85.368 412.66817951219514 85.368Q408.9681795121951 85.368 405.66817951219514 85.66799999999999Q402.3681795121951 85.96799999999999 399.4681795121951 86.76799999999999V77.96799999999999Q398.0681795121951 81.66799999999999 395.5681795121951 83.868Q391.9681795121951 87.068 386.0681795121951 87.068Q380.0681795121951 87.068 375.41817951219514 84.118Q370.7681795121951 81.16799999999999 368.2181795121951 75.118Q365.66817951219514 69.06799999999998 365.66817951219514 59.76799999999999Q365.66817951219514 50.66799999999999 368.66817951219514 44.617999999999995Q371.66817951219514 38.56799999999999 376.76817951219516 35.56799999999999Q381.8681795121951 32.56799999999999 388.16817951219514 32.56799999999999Q392.5681795121951 32.56799999999999 396.0681795121951 34.26799999999999Q398.0681795121951 35.26799999999999 399.4681795121951 36.96799999999999V19.367999999999995Q399.4681795121951 14.867999999999995 398.0181795121951 12.71799999999999Q396.5681795121951 10.567999999999984 392.66817951219514 10.567999999999984V8.46799999999999Q395.8681795121951 8.767999999999986 398.8681795121951 8.767999999999986Q402.66817951219514 8.767999999999986 405.9681795121951 8.417999999999985Q409.2681795121951 8.067999999999984 412.0681795121951 7.367999999999981ZM399.4681795121951 39.86799999999999Q398.16817951219514 37.76799999999999 396.2681795121951 36.66799999999999Q393.8681795121951 35.26799999999999 390.8681795121951 35.26799999999999Q385.4681795121951 35.26799999999999 382.2181795121951 41.317999999999984Q378.9681795121951 47.36799999999999 378.9681795121951 59.867999999999995Q378.9681795121951 68.26799999999999 380.2681795121951 73.41799999999999Q381.5681795121951 78.568 384.0181795121951 80.868Q386.4681795121951 83.16799999999999 389.8681795121951 83.16799999999999Q393.4681795121951 83.16799999999999 396.3681795121951 80.16799999999999Q398.66817951219514 77.868 399.4681795121951 73.868ZM449.9681795121951 32.56799999999999Q456.86817951219507 32.56799999999999 462.2181795121951 35.31799999999999Q467.5681795121951 38.06799999999999 470.7181795121951 44.06799999999999Q473.86817951219507 50.06799999999999 473.86817951219507 59.867999999999995Q473.86817951219507 69.66799999999999 470.7181795121951 75.66799999999999Q467.5681795121951 81.66799999999999 462.2181795121951 84.368Q456.86817951219507 87.068 449.9681795121951 87.068Q443.0681795121951 87.068 437.66817951219514 84.368Q432.2681795121951 81.66799999999999 429.16817951219514 75.66799999999999Q426.0681795121951 69.66799999999999 426.0681795121951 59.867999999999995Q426.0681795121951 50.06799999999999 429.16817951219514 44.06799999999999Q432.2681795121951 38.06799999999999 437.66817951219514 35.31799999999999Q443.0681795121951 32.56799999999999 449.9681795121951 32.56799999999999ZM449.9681795121951 34.56799999999999Q445.2681795121951 34.56799999999999 442.3181795121951 40.51799999999999Q439.36817951219507 46.46799999999999 439.36817951219507 59.867999999999995Q439.36817951219507 73.26799999999999 442.3181795121951 79.16799999999999Q445.2681795121951 85.068 449.9681795121951 85.068Q454.5681795121951 85.068 457.5681795121951 79.16799999999999Q460.5681795121951 73.26799999999999 460.5681795121951 59.867999999999995Q460.5681795121951 46.46799999999999 457.5681795121951 40.51799999999999Q454.5681795121951 34.56799999999999 449.9681795121951 34.56799999999999ZM500.5681795121951 17.567999999999984V34.06799999999999H513.3681795121951V36.06799999999999H500.5681795121951V75.868Q500.5681795121951 79.46799999999999 501.8681795121951 80.96799999999999Q503.16817951219514 82.46799999999999 505.5681795121951 82.46799999999999Q507.8681795121951 82.46799999999999 509.76817951219516 80.71799999999999Q511.66817951219514 78.96799999999999 513.1681795121951 74.868L514.9681795121951 75.66799999999999Q513.4681795121951 80.568 510.3181795121951 83.818Q507.16817951219514 87.068 501.4681795121951 87.068Q498.0681795121951 87.068 495.7181795121951 86.21799999999999Q493.3681795121951 85.368 491.66817951219514 83.76799999999999Q489.4681795121951 81.46799999999999 488.7181795121951 78.26799999999999Q487.9681795121951 75.06799999999998 487.9681795121951 69.76799999999999V36.06799999999999H479.16817951219514V34.06799999999999H487.9681795121951V20.167999999999992Q491.5681795121951 20.067999999999984 494.66817951219514 19.46799999999999Q497.7681795121951 18.867999999999995 500.5681795121951 17.567999999999984Z" fill="#FFFFFF"></path><circle cx="525.97" cy="77.47" r="8.20" fill="#14A3A3"></circle></svg>
+
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px">
+<a href="#how" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">How it works</a>
+<a href="#who" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">Who it's for</a>
+<a href="#trust" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">Integrity</a>
+<a href="#faq" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">FAQ</a>
+<a href="#demo" style="background: #14A3A3; color: #0F1C33; text-decoration: none; font-size: 15px; font-weight: 700; padding: 12px 20px; border-radius: 8px; min-height: 44px; display: inline-flex; align-items: center">Book a demo</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="background: #0F1C33; color: #FFFFFF; padding: 88px 24px 104px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #14A3A3; margin-bottom: 20px">The agreement-to-close operating system</div>
+<h1 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(40px, 5.4vw, 64px); line-height: 1.08; margin: 0 0 24px">Every transaction, supervised from signed agreement to close.</h1>
+<p style="font-size: 19px; line-height: 1.6; color: #C9D3E3; margin: 0 0 36px; max-width: 560px">Coradot gives your brokerage one governed workspace for listing and purchase files: approved forms, signatures, deadlines and real broker oversight. Cora, its built-in assistant, works from your own forms and policies and tells you when something can't be verified.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#demo" style="background: #14A3A3; color: #0F1C33; text-decoration: none; font-size: 17px; font-weight: 700; padding: 16px 28px; border-radius: 10px; min-height: 52px; display: inline-flex; align-items: center">Book a demo</a>
+<a href="#how" style="color: #FFFFFF; text-decoration: none; font-size: 17px; font-weight: 600; padding: 16px 24px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.28); min-height: 52px; display: inline-flex; align-items: center">See how it works</a>
+</div>
+</div>
+
+<!-- Stream visual -->
+<div style="flex: 1 1 420px; min-width: 0; max-width: 520px">
+<div style="background: #1A2B4A; border: 1px solid rgba(255,255,255,0.10); border-radius: 18px; padding: 28px; box-shadow: 0 30px 60px rgba(0,0,0,0.35)">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 6px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1.2px; color: #8FA3C0; text-transform: uppercase">Purchase Stream</div>
+<div style="font-size: 12px; font-weight: 600; color: #0F1C33; background: #14A3A3; padding: 4px 10px; border-radius: 999px">Under contract</div>
+</div>
+<div style="font-size: 20px; font-weight: 600; margin-bottom: 24px">1234 Example Street, Washington, DC (sample)</div>
+
+<div style="display: flex; flex-direction: column; gap: 0">
+<div style="display: flex; gap: 16px">
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 16px; height: 16px; border-radius: 50%; background: #14A3A3; margin-top: 3px"></div><div style="width: 2px; flex: 1; background: #14A3A3; min-height: 30px"></div></div>
+<div style="padding-bottom: 18px"><div style="font-weight: 600; font-size: 16px">Signed agreement</div><div style="font-size: 14px; color: #8FA3C0">Executed copy preserved</div></div>
+</div>
+<div style="display: flex; gap: 16px">
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 16px; height: 16px; border-radius: 50%; background: #14A3A3; margin-top: 3px"></div><div style="width: 2px; flex: 1; background: #14A3A3; min-height: 30px"></div></div>
+<div style="padding-bottom: 18px"><div style="font-weight: 600; font-size: 16px">Cora structures the file</div><div style="font-size: 14px; color: #8FA3C0">Required forms and deadlines identified</div></div>
+</div>
+<div style="display: flex; gap: 16px">
+<div style="display: flex; flex-direction: column; align-items: center"><div class="cd-live" style="width: 16px; height: 16px; border-radius: 50%; background: #1A2B4A; border: 3px solid #14A3A3; margin-top: 3px"></div><div style="width: 2px; flex: 1; background: rgba(255,255,255,0.18); min-height: 30px"></div></div>
+<div style="padding-bottom: 18px"><div style="font-weight: 600; font-size: 16px">Broker review</div><div style="font-size: 14px; color: #8FA3C0">Waiting on approval</div></div>
+</div>
+<div style="display: flex; gap: 16px">
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.35); margin-top: 3px"></div><div style="width: 2px; flex: 1; background: rgba(255,255,255,0.18); min-height: 30px"></div></div>
+<div style="padding-bottom: 18px"><div style="font-weight: 600; font-size: 16px; color: #C9D3E3">Contingencies</div><div style="font-size: 14px; color: #8FA3C0">Inspection, financing, appraisal</div></div>
+</div>
+<div style="display: flex; gap: 16px">
+<div style="display: flex; flex-direction: column; align-items: center"><div style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.35); margin-top: 3px"></div></div>
+<div><div style="font-weight: 600; font-size: 16px; color: #C9D3E3">Close</div><div style="font-size: 14px; color: #8FA3C0">Complete, auditable record</div></div>
+</div>
+</div>
+
+<div style="margin-top: 24px; background: rgba(20,163,163,0.12); border: 1px solid rgba(20,163,163,0.35); border-radius: 12px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
+<div style="font-size: 14px; line-height: 1.5; color: #E4EAF3"><strong style="color: #FFFFFF">Cora:</strong> The seller disclosure still needs a buyer signature. I've flagged it for the agent and the broker.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROBLEM -->
+<section style="padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="max-width: 760px; margin-bottom: 56px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">The gap</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0 0 20px">A transaction lives in too many places.</h2>
+<p style="font-size: 18px; line-height: 1.65; color: #4A5568; margin: 0">Forms in one portal, signatures in another, deadlines in a spreadsheet, status in someone's inbox. Brokers are responsible for all of it, but often see it last.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 14px; padding: 28px">
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Wrong or outdated forms</div>
+<div style="font-size: 16px; line-height: 1.6; color: #4A5568">Agents pull a version from a desktop folder and nobody catches it until closing.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 14px; padding: 28px">
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Missed signatures and dates</div>
+<div style="font-size: 16px; line-height: 1.6; color: #4A5568">Contingency deadlines and missing initials surface late, when they're hardest to fix.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 14px; padding: 28px">
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Oversight after the fact</div>
+<div style="font-size: 16px; line-height: 1.6; color: #4A5568">Broker review happens once the file is already a problem, not while it can still be fixed.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 14px; padding: 28px">
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Status nobody can trust</div>
+<div style="font-size: 16px; line-height: 1.6; color: #4A5568">"Under contract" means whatever the last person typed, not what the documents show.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background: #FFFFFF; border-top: 1px solid #E6E0D4; border-bottom: 1px solid #E6E0D4; padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="max-width: 760px; margin-bottom: 56px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">How it works</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0 0 20px">One Stream per side of the deal, from first signature to final record.</h2>
+<p style="font-size: 18px; line-height: 1.65; color: #4A5568; margin: 0">Each listing and each purchase gets its own Stream with a clear status, so everyone knows what's done, what's next and who needs to act.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<div style="padding: 24px; border-radius: 14px; background: #FAF7F1">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #0D7A7A; margin-bottom: 14px">01</div>
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Open the Stream</div>
+<div style="font-size: 15px; line-height: 1.6; color: #4A5568">Start from a signed agreement. Coradot opens a Listing or Purchase Stream for it.</div>
+</div>
+<div style="padding: 24px; border-radius: 14px; background: #FAF7F1">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #0D7A7A; margin-bottom: 14px">02</div>
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Use the right forms</div>
+<div style="font-size: 15px; line-height: 1.6; color: #4A5568">Agents work from approved, current form versions for the property's jurisdiction.</div>
+</div>
+<div style="padding: 24px; border-radius: 14px; background: #FAF7F1">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #0D7A7A; margin-bottom: 14px">03</div>
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Sign in one place</div>
+<div style="font-size: 15px; line-height: 1.6; color: #4A5568">Coradot Signature routes documents to the right signers and keeps the executed copy.</div>
+</div>
+<div style="padding: 24px; border-radius: 14px; background: #FAF7F1">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #0D7A7A; margin-bottom: 14px">04</div>
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Broker reviews</div>
+<div style="font-size: 15px; line-height: 1.6; color: #4A5568">Brokers approve, flag or hold the file while it can still be fixed.</div>
+</div>
+<div style="padding: 24px; border-radius: 14px; background: #FAF7F1">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #0D7A7A; margin-bottom: 14px">05</div>
+<div style="font-size: 18px; font-weight: 600; margin-bottom: 8px">Close with a record</div>
+<div style="font-size: 15px; line-height: 1.6; color: #4A5568">Every document, signature and decision stays attached to the file.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section id="who" style="padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="max-width: 760px; margin-bottom: 40px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">Who it's for</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0">Built around how a brokerage actually works.</h2>
+</div>
+
+<div role="tablist" aria-label="Audience" style="display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid #E6E0D4; margin-bottom: 40px">
+<button type="button" role="tab" aria-selected="true" data-tab="broker" style="background: transparent; border: none; border-bottom: 3px solid #0D7A7A; margin-bottom: -1px; padding: 14px 18px; min-height: 48px; font-family: inherit; font-size: 16px; font-weight: 700; color: #0F1C33; cursor: pointer">Brokers &amp; brokerages</button>
+<button type="button" role="tab" aria-selected="false" data-tab="agent" style="background: transparent; border: none; border-bottom: 3px solid transparent; margin-bottom: -1px; padding: 14px 18px; min-height: 48px; font-family: inherit; font-size: 16px; font-weight: 500; color: #4A5568; cursor: pointer">Agents &amp; teams</button>
+<button type="button" role="tab" aria-selected="false" data-tab="owner" style="background: transparent; border: none; border-bottom: 3px solid transparent; margin-bottom: -1px; padding: 14px 18px; min-height: 48px; font-family: inherit; font-size: 16px; font-weight: 500; color: #4A5568; cursor: pointer">MLSs, associations &amp; form owners</button>
+</div>
+
+<div data-panel="broker">
+<div role="tabpanel" style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 340px; min-width: 0">
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 32px; line-height: 1.2; margin: 0 0 16px">Oversight you can act on, not just look at.</h3>
+<p style="font-size: 17px; line-height: 1.65; color: #4A5568; margin: 0">See every active file across your agents, catch problems early and step in before they reach closing.</p>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Approval gates</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Require broker sign-off at the points you choose.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Form governance</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Agents use the forms you approve. They can't edit broker-controlled forms.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Exceptions, explained</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Every alert says what's wrong, why, and who needs to act.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Agent and license oversight</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Manage seats, roles and access in one place.</div></div>
+</div>
+</div>
+</div>
+
+<div data-panel="agent" hidden>
+<div role="tabpanel" style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 340px; min-width: 0">
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 32px; line-height: 1.2; margin: 0 0 16px">Less chasing. More closing.</h3>
+<p style="font-size: 17px; line-height: 1.65; color: #4A5568; margin: 0">Your files, forms, signatures and deadlines in one workspace, with Cora pointing out what's missing before someone else does.</p>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Listing and Purchase Streams</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">A clear path for each side of the deal.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Signatures built in</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Send, track and remind without leaving the file.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Deadlines that surface</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Upcoming dates and overdue tasks, in plain view.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Hand off to your TC</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Delegate a Stream to a transaction coordinator.</div></div>
+</div>
+</div>
+</div>
+
+<div data-panel="owner" hidden>
+<div role="tabpanel" style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 340px; min-width: 0">
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 32px; line-height: 1.2; margin: 0 0 16px">Your forms, used the way you published them.</h3>
+<p style="font-size: 17px; line-height: 1.65; color: #4A5568; margin: 0">Form owners stay in control of official forms and versions, without access to anyone's private transaction files.</p>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Publish and retire versions</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">New versions never overwrite old ones.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Provenance on every form</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Who published it, when, and where it applies.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">History stays intact</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Past transactions keep the exact version they used.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 22px"><div style="font-weight: 600; font-size: 17px; margin-bottom: 6px">Partnership program</div><div style="font-size: 15px; line-height: 1.55; color: #4A5568">Ask us about partnering with Coradot.</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TRUST -->
+<section id="trust" style="background: #1A2B4A; color: #FFFFFF; padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="max-width: 760px; margin-bottom: 56px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #14A3A3; margin-bottom: 16px">Integrity by design</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0 0 20px">Built for records that have to hold up.</h2>
+<p style="font-size: 18px; line-height: 1.65; color: #C9D3E3; margin: 0">Real estate files carry legal and financial weight. Coradot is designed so the record reflects what actually happened.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px">
+<div style="border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 28px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="M9 14l2 2 4-4"></path></svg>
+<div style="font-size: 18px; font-weight: 600; margin: 16px 0 8px">Executed means final</div>
+<div style="font-size: 15px; line-height: 1.6; color: #C9D3E3">Signed documents are locked. Corrections happen through a new document or amendment, never a silent swap.</div>
+</div>
+<div style="border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 28px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+<div style="font-size: 18px; font-weight: 600; margin: 16px 0 8px">Every action attributable</div>
+<div style="font-size: 15px; line-height: 1.6; color: #C9D3E3">Who did what, and when, is recorded in the file’s audit trail, and signed documents carry a tamper-evident completion certificate.</div>
+</div>
+<div style="border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 28px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+<div style="font-size: 18px; font-weight: 600; margin: 16px 0 8px">Access by authority</div>
+<div style="font-size: 15px; line-height: 1.6; color: #C9D3E3">Being logged in isn't enough. People see and sign only what their role allows.</div>
+</div>
+<div style="border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; padding: 28px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14A3A3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"></path><path d="M18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"></path></svg>
+<div style="font-size: 18px; font-weight: 600; margin: 16px 0 8px">An assistant that shows its source</div>
+<div style="font-size: 15px; line-height: 1.6; color: #C9D3E3">Cora works from your approved forms and policies. When she can't verify something, she says so.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- COVERAGE -->
+<section style="padding: 80px 24px; border-bottom: 1px solid #E6E0D4">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 360px; min-width: 0">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">Where we work</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.2; margin: 0">Jurisdiction-aware from day one.</h2>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 10px">
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Washington, DC</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Maryland</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Virginia</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Texas</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Colorado</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Louisiana</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Oklahoma</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Utah</span>
+<span style="border: 1px solid #CFC7B6; background: #FFFFFF; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px">Wisconsin</span>
+</div>
+</div>
+</section>
+
+<!-- DEMO FORM -->
+<section id="demo" style="padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">Book a demo</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0 0 20px">See Coradot on a real file.</h2>
+<p style="font-size: 18px; line-height: 1.65; color: #4A5568; margin: 0 0 28px">We'll walk through a listing and a purchase in your market, show you the broker view, and talk through what onboarding your brokerage would look like.</p>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5L20 7"></path></svg><span style="font-size: 16px">30 minutes, with someone who knows transactions</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5L20 7"></path></svg><span style="font-size: 16px">Shown with forms from your jurisdiction</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5L20 7"></path></svg><span style="font-size: 16px">Pricing discussed on the call, based on your team</span></div>
+</div>
+</div>
+
+<div style="flex: 1 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 18px; padding: 36px; box-shadow: 0 20px 50px rgba(15,28,51,0.08)">
+<div id="cd-form-wrap">
+<form id="cd-demo-form" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="cd-first" style="font-size: 14px; font-weight: 600">First name</label><input id="cd-first" name="first" required autocomplete="given-name" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="cd-last" style="font-size: 14px; font-weight: 600">Last name</label><input id="cd-last" name="last" required autocomplete="family-name" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="cd-email" style="font-size: 14px; font-weight: 600">Work email</label><input id="cd-email" name="email" type="email" required autocomplete="email" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="cd-company" style="font-size: 14px; font-weight: 600">Brokerage or organization</label><input id="cd-company" name="company" required autocomplete="organization" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="cd-role" style="font-size: 14px; font-weight: 600">Your role</label><select id="cd-role" name="role" required style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"><option value="">Select one</option><option>Broker / owner</option><option>Managing broker</option><option>Operations or compliance</option><option>Agent or team lead</option><option>Transaction coordinator</option><option>MLS, association or form owner</option></select></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="cd-size" style="font-size: 14px; font-weight: 600">Number of agents</label><select id="cd-size" name="size" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"><option value="">Select one</option><option>1–10</option><option>11–50</option><option>51–200</option><option>201–1,000</option><option>1,000+</option></select></div>
+<div style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1"><label for="cd-state" style="font-size: 14px; font-weight: 600">Primary market</label><input id="cd-state" name="market" placeholder="e.g. Montgomery County, MD" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; min-height: 46px; font-size: 16px; background: #FFFFFF; color: #0F1C33"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1"><label for="cd-msg" style="font-size: 14px; font-weight: 600">Anything we should know? <span style="font-weight: 400; color: #5A6372">(optional)</span></label><textarea id="cd-msg" name="message" rows="3" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; font-size: 16px; resize: vertical; background: #FFFFFF; color: #0F1C33"></textarea></div>
+<div style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 12px">
+<button type="submit" style="background: #0F1C33; color: #FFFFFF; border: none; border-radius: 10px; padding: 16px 24px; min-height: 52px; font-size: 17px; font-weight: 700; cursor: pointer; font-family: inherit">Request my demo</button>
+<p style="font-size: 13px; line-height: 1.5; color: #5A6372; margin: 0">We'll use these details only to schedule your demo and will never sell them. Your request reaches us by email through a form service. To have it deleted, email <a href="mailto:hello@coradot.com">hello@coradot.com</a>.</p>
+</div>
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<p id="cd-error" role="alert" hidden style="grid-column:1/-1;margin:0;color:#B42318;font-size:14px;line-height:1.5">We couldn't send your request just now. Please try again, or email <a href="mailto:hello@coradot.com">hello@coradot.com</a> and we'll set up your demo.</p>
+</form>
+</div>
+<div id="cd-thanks" hidden>
+<div role="status" style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 24px 0">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #E3F3F3; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0D7A7A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg></div>
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 30px; margin: 0">Thanks. We'll be in touch.</h3>
+<p style="font-size: 17px; line-height: 1.6; color: #4A5568; margin: 0">Someone from our team will email you within one business day to find a time.</p>
+<button type="button" id="cd-reset" style="background: transparent; color: #0D7A7A; border: 1px solid #0D7A7A; border-radius: 10px; padding: 12px 20px; min-height: 44px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: inherit">Submit another request</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background: #FFFFFF; border-top: 1px solid #E6E0D4; padding: 104px 24px">
+<div style="max-width: 860px; margin: 0 auto">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">FAQ</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0 0 40px">Common questions</h2>
+<div style="display: flex; flex-direction: column">
+<details style="border-top: 1px solid #E6E0D4; padding: 22px 0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 19px; font-weight: 600; min-height: 44px">Is Coradot a CRM or an e-signature tool?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0D7A7A; font-weight: 400">+</span></summary>
+<p style="font-size: 16px; line-height: 1.65; color: #4A5568; margin: 12px 0 0">Neither on its own. Coradot runs the transaction itself, from signed agreement to close. Signatures are built in through Coradot Signature, so documents, signers and the executed copy stay with the file.</p>
+</details>
+<details style="border-top: 1px solid #E6E0D4; padding: 22px 0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 19px; font-weight: 600; min-height: 44px">Does Cora give legal advice?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0D7A7A; font-weight: 400">+</span></summary>
+<p style="font-size: 16px; line-height: 1.65; color: #4A5568; margin: 12px 0 0">No. Cora helps find missing items, surface deadlines and explain where a file stands. She works from your approved forms and policies, never changes a signed document, and tells you when she can't verify something.</p>
+</details>
+<details style="border-top: 1px solid #E6E0D4; padding: 22px 0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 19px; font-weight: 600; min-height: 44px">Can agents change our forms?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0D7A7A; font-weight: 400">+</span></summary>
+<p style="font-size: 16px; line-height: 1.65; color: #4A5568; margin: 12px 0 0">No. Brokers and form owners control which forms and versions are available. Agents can upload their own documents for signature, but an upload is never treated as an approved form.</p>
+</details>
+<details style="border-top: 1px solid #E6E0D4; padding: 22px 0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 19px; font-weight: 600; min-height: 44px">Who can see a transaction?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0D7A7A; font-weight: 400">+</span></summary>
+<p style="font-size: 16px; line-height: 1.65; color: #4A5568; margin: 12px 0 0">Only the people whose role gives them access, such as the agent, their broker and invited participants. Form owners manage forms but don't get access to private transaction files.</p>
+</details>
+<details style="border-top: 1px solid #E6E0D4; border-bottom: 1px solid #E6E0D4; padding: 22px 0">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 19px; font-weight: 600; min-height: 44px">How does onboarding work?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0D7A7A; font-weight: 400">+</span></summary>
+<p style="font-size: 16px; line-height: 1.65; color: #4A5568; margin: 12px 0 0">We set up your brokerage, approved forms, roles and review points with you, then bring agents on. We'll go through the details on your demo.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA + FOOTER -->
+<footer style="background: #0F1C33; color: #C9D3E3; padding: 72px 24px 40px">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.12)">
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: #FFFFFF; margin: 0; max-width: 640px">Give your brokerage one source of truth for every file.</h2>
+<a href="#demo" style="background: #14A3A3; color: #0F1C33; text-decoration: none; font-size: 17px; font-weight: 700; padding: 16px 28px; border-radius: 10px; min-height: 52px; display: inline-flex; align-items: center">Book a demo</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; padding-top: 32px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px">
+<svg role="img" aria-label="Coradot" width="138" height="26" style="display: block" xmlns="http://www.w3.org/2000/svg" viewBox="0.0 0.0 534.2 100.5"><g transform="translate(-15.12 -15.12) scale(4.0868)"><path d="M25 8.5A11 11 0 1 0 25 23.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"></path><circle cx="25" cy="8.5" r="2.6" fill="#14A3A3"></circle><circle cx="16" cy="16" r="2.6" fill="#14A3A3"></circle><circle cx="25" cy="23.5" r="2.6" fill="#FFFFFF"></circle></g><path d="M172.6681795121951 13.46799999999999Q179.2681795121951 13.46799999999999 183.5181795121951 15.417999999999992Q187.7681795121951 17.367999999999995 191.06817951219512 19.96799999999999Q193.06817951219512 21.46799999999999 194.11817951219513 20.31799999999999Q195.1681795121951 19.167999999999992 195.56817951219512 14.867999999999995H197.8681795121951Q197.6681795121951 18.667999999999992 197.56817951219512 24.167999999999992Q197.4681795121951 29.667999999999992 197.4681795121951 38.66799999999999H195.1681795121951Q194.56817951219512 34.16799999999999 193.86817951219513 31.11799999999999Q193.1681795121951 28.06799999999999 191.9181795121951 25.86799999999999Q190.6681795121951 23.667999999999992 188.4681795121951 21.667999999999992Q185.7681795121951 18.667999999999992 182.0181795121951 17.21799999999999Q178.2681795121951 15.767999999999986 174.1681795121951 15.767999999999986Q168.9681795121951 15.767999999999986 165.1181795121951 18.517999999999986Q161.2681795121951 21.267999999999986 158.7181795121951 26.017999999999986Q156.1681795121951 30.767999999999986 154.9181795121951 37.067999999999984Q153.6681795121951 43.36799999999999 153.6681795121951 50.46799999999999Q153.6681795121951 57.76799999999999 155.0181795121951 64.01799999999999Q156.3681795121951 70.26799999999999 159.0181795121951 74.91799999999999Q161.6681795121951 79.568 165.61817951219513 82.16799999999999Q169.56817951219512 84.76799999999999 174.7681795121951 84.76799999999999Q178.4681795121951 84.76799999999999 182.3681795121951 83.368Q186.2681795121951 81.96799999999999 188.7681795121951 79.068Q192.06817951219512 76.06799999999998 193.2681795121951 71.91799999999998Q194.4681795121951 67.76799999999999 195.1681795121951 60.867999999999995H197.4681795121951Q197.4681795121951 70.26799999999999 197.56817951219512 76.01799999999999Q197.6681795121951 81.76799999999999 197.8681795121951 85.66799999999999H195.56817951219512Q195.1681795121951 81.368 194.2181795121951 80.268Q193.2681795121951 79.16799999999999 191.06817951219512 80.568Q187.3681795121951 83.16799999999999 183.2181795121951 85.118Q179.06817951219512 87.068 172.56817951219512 87.068Q162.3681795121951 87.068 154.66817951219508 82.768Q146.9681795121951 78.46799999999999 142.7181795121951 70.368Q138.4681795121951 62.26799999999999 138.4681795121951 50.86799999999999Q138.4681795121951 39.66799999999999 142.8681795121951 31.26799999999999Q147.2681795121951 22.867999999999988 154.9681795121951 18.16799999999999Q162.6681795121951 13.46799999999999 172.6681795121951 13.46799999999999ZM233.06817951219512 32.56799999999999Q239.96817951219512 32.56799999999999 245.31817951219512 35.31799999999999Q250.6681795121951 38.06799999999999 253.81817951219512 44.06799999999999Q256.9681795121951 50.06799999999999 256.9681795121951 59.867999999999995Q256.9681795121951 69.66799999999999 253.81817951219512 75.66799999999999Q250.6681795121951 81.66799999999999 245.31817951219512 84.368Q239.96817951219512 87.068 233.06817951219512 87.068Q226.1681795121951 87.068 220.7681795121951 84.368Q215.36817951219513 81.66799999999999 212.2681795121951 75.66799999999999Q209.1681795121951 69.66799999999999 209.1681795121951 59.867999999999995Q209.1681795121951 50.06799999999999 212.2681795121951 44.06799999999999Q215.36817951219513 38.06799999999999 220.7681795121951 35.31799999999999Q226.1681795121951 32.56799999999999 233.06817951219512 32.56799999999999ZM233.06817951219512 34.56799999999999Q228.36817951219513 34.56799999999999 225.41817951219514 40.51799999999999Q222.46817951219512 46.46799999999999 222.46817951219512 59.867999999999995Q222.46817951219512 73.26799999999999 225.41817951219514 79.16799999999999Q228.36817951219513 85.068 233.06817951219512 85.068Q237.6681795121951 85.068 240.6681795121951 79.16799999999999Q243.6681795121951 73.26799999999999 243.6681795121951 59.867999999999995Q243.6681795121951 46.46799999999999 240.6681795121951 40.51799999999999Q237.6681795121951 34.56799999999999 233.06817951219512 34.56799999999999ZM297.96817951219515 32.56799999999999Q301.0681795121951 32.56799999999999 303.1181795121951 33.867999999999995Q305.16817951219514 35.16799999999999 306.16817951219514 37.16799999999999Q307.16817951219514 39.16799999999999 307.16817951219514 41.36799999999999Q307.16817951219514 44.66799999999999 305.21817951219515 46.867999999999995Q303.26817951219516 49.06799999999999 300.0681795121951 49.06799999999999Q297.0681795121951 49.06799999999999 295.16817951219514 47.46799999999999Q293.26817951219516 45.86799999999999 293.26817951219516 43.06799999999999Q293.26817951219516 40.56799999999999 294.51817951219516 38.867999999999995Q295.76817951219516 37.16799999999999 297.3681795121951 36.16799999999999Q296.26817951219516 35.56799999999999 294.8681795121951 35.76799999999999Q292.46817951219515 35.96799999999999 290.46817951219515 37.46799999999999Q288.46817951219515 38.96799999999999 287.0681795121951 41.16799999999999Q285.66817951219514 43.36799999999999 284.91817951219514 45.86799999999999Q284.16817951219514 48.36799999999999 284.16817951219514 50.66799999999999V75.368Q284.16817951219514 80.26799999999999 286.66817951219514 81.91799999999999Q289.16817951219514 83.568 293.96817951219515 83.568V85.66799999999999Q291.66817951219514 85.568 287.3181795121951 85.41799999999999Q282.96817951219515 85.26799999999999 278.26817951219516 85.26799999999999Q274.3681795121951 85.26799999999999 270.51817951219516 85.41799999999999Q266.66817951219514 85.568 264.76817951219516 85.66799999999999V83.568Q268.46817951219515 83.568 270.01817951219516 82.068Q271.5681795121951 80.568 271.5681795121951 76.368V44.86799999999999Q271.5681795121951 40.36799999999999 270.1181795121951 38.21799999999999Q268.66817951219514 36.06799999999999 264.76817951219516 36.06799999999999V33.96799999999999Q267.96817951219515 34.26799999999999 270.96817951219515 34.26799999999999Q274.66817951219514 34.26799999999999 278.01817951219516 33.91799999999999Q281.3681795121951 33.56799999999999 284.16817951219514 32.86799999999999V43.26799999999999Q285.3681795121951 40.46799999999999 287.3181795121951 38.06799999999999Q289.26817951219516 35.66799999999999 292.01817951219516 34.117999999999995Q294.76817951219516 32.56799999999999 297.96817951219515 32.56799999999999ZM325.7681795121951 86.368Q321.4681795121951 86.368 318.4681795121951 84.71799999999999Q315.4681795121951 83.068 313.9681795121951 80.21799999999999Q312.4681795121951 77.368 312.4681795121951 73.868Q312.4681795121951 69.56799999999998 314.4681795121951 66.81799999999998Q316.4681795121951 64.06799999999998 319.61817951219507 62.417999999999985Q322.7681795121951 60.76799999999999 326.2681795121951 59.61799999999999Q329.7681795121951 58.46799999999999 332.86817951219507 57.41799999999999Q335.9681795121951 56.367999999999995 337.9681795121951 54.96799999999999Q339.9681795121951 53.56799999999999 339.9681795121951 51.267999999999994V43.96799999999999Q339.9681795121951 40.76799999999999 339.0181795121951 38.71799999999999Q338.0681795121951 36.66799999999999 336.2181795121951 35.617999999999995Q334.3681795121951 34.56799999999999 331.5681795121951 34.56799999999999Q329.4681795121951 34.56799999999999 327.16817951219514 35.16799999999999Q324.8681795121951 35.76799999999999 323.3681795121951 37.46799999999999Q325.9681795121951 38.16799999999999 327.41817951219514 40.06799999999999Q328.8681795121951 41.96799999999999 328.8681795121951 44.66799999999999Q328.8681795121951 47.767999999999994 326.8181795121951 49.517999999999994Q324.7681795121951 51.267999999999994 321.6681795121951 51.267999999999994Q318.3681795121951 51.267999999999994 316.66817951219514 49.16799999999999Q314.9681795121951 47.06799999999999 314.9681795121951 44.26799999999999Q314.9681795121951 41.46799999999999 316.36817951219507 39.61799999999999Q317.7681795121951 37.76799999999999 320.2681795121951 36.26799999999999Q322.7681795121951 34.56799999999999 326.66817951219514 33.56799999999999Q330.5681795121951 32.56799999999999 335.1681795121951 32.56799999999999Q339.5681795121951 32.56799999999999 342.9681795121951 33.51799999999999Q346.3681795121951 34.46799999999999 348.7681795121951 36.86799999999999Q351.16817951219514 39.16799999999999 351.8681795121951 42.56799999999999Q352.5681795121951 45.96799999999999 352.5681795121951 50.86799999999999V78.26799999999999Q352.5681795121951 80.76799999999999 353.16817951219514 81.81799999999998Q353.7681795121951 82.868 355.0681795121951 82.868Q356.0681795121951 82.868 356.9681795121951 82.368Q357.8681795121951 81.868 358.9681795121951 80.96799999999999L360.0681795121951 82.66799999999999Q357.8681795121951 84.368 355.4681795121951 85.368Q353.0681795121951 86.368 349.66817951219514 86.368Q346.1681795121951 86.368 344.11817951219507 85.368Q342.0681795121951 84.368 341.11817951219507 82.46799999999999Q340.1681795121951 80.568 340.0681795121951 77.96799999999999Q337.6681795121951 81.96799999999999 334.1681795121951 84.16799999999999Q330.6681795121951 86.368 325.7681795121951 86.368ZM331.7681795121951 80.76799999999999Q334.1681795121951 80.76799999999999 336.2181795121951 79.46799999999999Q338.2681795121951 78.16799999999999 339.9681795121951 75.56799999999998V55.367999999999995Q338.9681795121951 56.867999999999995 337.11817951219507 58.06799999999999Q335.2681795121951 59.26799999999999 333.16817951219514 60.46799999999999Q331.0681795121951 61.66799999999999 329.2181795121951 63.21799999999999Q327.3681795121951 64.76799999999999 326.1181795121951 67.01799999999999Q324.8681795121951 69.26799999999999 324.8681795121951 72.76799999999999Q324.8681795121951 76.66799999999999 326.7681795121951 78.71799999999999Q328.6681795121951 80.76799999999999 331.7681795121951 80.76799999999999ZM412.0681795121951 7.367999999999981V74.76799999999999Q412.0681795121951 79.26799999999999 413.5681795121951 81.41799999999999Q415.0681795121951 83.568 418.8681795121951 83.568V85.66799999999999Q415.7681795121951 85.368 412.66817951219514 85.368Q408.9681795121951 85.368 405.66817951219514 85.66799999999999Q402.3681795121951 85.96799999999999 399.4681795121951 86.76799999999999V77.96799999999999Q398.0681795121951 81.66799999999999 395.5681795121951 83.868Q391.9681795121951 87.068 386.0681795121951 87.068Q380.0681795121951 87.068 375.41817951219514 84.118Q370.7681795121951 81.16799999999999 368.2181795121951 75.118Q365.66817951219514 69.06799999999998 365.66817951219514 59.76799999999999Q365.66817951219514 50.66799999999999 368.66817951219514 44.617999999999995Q371.66817951219514 38.56799999999999 376.76817951219516 35.56799999999999Q381.8681795121951 32.56799999999999 388.16817951219514 32.56799999999999Q392.5681795121951 32.56799999999999 396.0681795121951 34.26799999999999Q398.0681795121951 35.26799999999999 399.4681795121951 36.96799999999999V19.367999999999995Q399.4681795121951 14.867999999999995 398.0181795121951 12.71799999999999Q396.5681795121951 10.567999999999984 392.66817951219514 10.567999999999984V8.46799999999999Q395.8681795121951 8.767999999999986 398.8681795121951 8.767999999999986Q402.66817951219514 8.767999999999986 405.9681795121951 8.417999999999985Q409.2681795121951 8.067999999999984 412.0681795121951 7.367999999999981ZM399.4681795121951 39.86799999999999Q398.16817951219514 37.76799999999999 396.2681795121951 36.66799999999999Q393.8681795121951 35.26799999999999 390.8681795121951 35.26799999999999Q385.4681795121951 35.26799999999999 382.2181795121951 41.317999999999984Q378.9681795121951 47.36799999999999 378.9681795121951 59.867999999999995Q378.9681795121951 68.26799999999999 380.2681795121951 73.41799999999999Q381.5681795121951 78.568 384.0181795121951 80.868Q386.4681795121951 83.16799999999999 389.8681795121951 83.16799999999999Q393.4681795121951 83.16799999999999 396.3681795121951 80.16799999999999Q398.66817951219514 77.868 399.4681795121951 73.868ZM449.9681795121951 32.56799999999999Q456.86817951219507 32.56799999999999 462.2181795121951 35.31799999999999Q467.5681795121951 38.06799999999999 470.7181795121951 44.06799999999999Q473.86817951219507 50.06799999999999 473.86817951219507 59.867999999999995Q473.86817951219507 69.66799999999999 470.7181795121951 75.66799999999999Q467.5681795121951 81.66799999999999 462.2181795121951 84.368Q456.86817951219507 87.068 449.9681795121951 87.068Q443.0681795121951 87.068 437.66817951219514 84.368Q432.2681795121951 81.66799999999999 429.16817951219514 75.66799999999999Q426.0681795121951 69.66799999999999 426.0681795121951 59.867999999999995Q426.0681795121951 50.06799999999999 429.16817951219514 44.06799999999999Q432.2681795121951 38.06799999999999 437.66817951219514 35.31799999999999Q443.0681795121951 32.56799999999999 449.9681795121951 32.56799999999999ZM449.9681795121951 34.56799999999999Q445.2681795121951 34.56799999999999 442.3181795121951 40.51799999999999Q439.36817951219507 46.46799999999999 439.36817951219507 59.867999999999995Q439.36817951219507 73.26799999999999 442.3181795121951 79.16799999999999Q445.2681795121951 85.068 449.9681795121951 85.068Q454.5681795121951 85.068 457.5681795121951 79.16799999999999Q460.5681795121951 73.26799999999999 460.5681795121951 59.867999999999995Q460.5681795121951 46.46799999999999 457.5681795121951 40.51799999999999Q454.5681795121951 34.56799999999999 449.9681795121951 34.56799999999999ZM500.5681795121951 17.567999999999984V34.06799999999999H513.3681795121951V36.06799999999999H500.5681795121951V75.868Q500.5681795121951 79.46799999999999 501.8681795121951 80.96799999999999Q503.16817951219514 82.46799999999999 505.5681795121951 82.46799999999999Q507.8681795121951 82.46799999999999 509.76817951219516 80.71799999999999Q511.66817951219514 78.96799999999999 513.1681795121951 74.868L514.9681795121951 75.66799999999999Q513.4681795121951 80.568 510.3181795121951 83.818Q507.16817951219514 87.068 501.4681795121951 87.068Q498.0681795121951 87.068 495.7181795121951 86.21799999999999Q493.3681795121951 85.368 491.66817951219514 83.76799999999999Q489.4681795121951 81.46799999999999 488.7181795121951 78.26799999999999Q487.9681795121951 75.06799999999998 487.9681795121951 69.76799999999999V36.06799999999999H479.16817951219514V34.06799999999999H487.9681795121951V20.167999999999992Q491.5681795121951 20.067999999999984 494.66817951219514 19.46799999999999Q497.7681795121951 18.867999999999995 500.5681795121951 17.567999999999984Z" fill="#FFFFFF"></path><circle cx="525.97" cy="77.47" r="8.20" fill="#14A3A3"></circle></svg>
+<span>© 2026 Coradot Technologies, Inc. All rights reserved.</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="mailto:hello@coradot.com" style="color: #C9D3E3">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('[data-tab]');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      var key = t.getAttribute('data-tab');
+      tabs.forEach(function (o) {
+        var on = o === t;
+        o.setAttribute('aria-selected', on ? 'true' : 'false');
+        o.style.borderBottomColor = on ? '#0D7A7A' : 'transparent';
+        o.style.fontWeight = on ? '700' : '500';
+        o.style.color = on ? '#0F1C33' : '#4A5568';
+      });
+      document.querySelectorAll('[data-panel]').forEach(function (p) {
+        p.hidden = p.getAttribute('data-panel') !== key;
+      });
+    });
+  });
+  var form = document.getElementById('cd-demo-form');
+  var wrap = document.getElementById('cd-form-wrap');
+  var thanks = document.getElementById('cd-thanks');
+  // Demo requests are emailed to hello@coradot.com through FormSubmit (no backend on this site).
+  // The first submission ever made from the live page triggers a one-time activation email to that address.
+  var errEl = document.getElementById('cd-error');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.elements['_honey'] && form.elements['_honey'].value) { wrap.hidden = true; thanks.hidden = false; return; }   // a bot filled the hidden field
+    var btn = form.querySelector('button[type="submit"]'), label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Sending\u2026'; errEl.hidden = true;
+    var data = {};
+    new FormData(form).forEach(function (v, k) { if (k !== '_honey') data[k] = v; });
+    data.name = ((data.first || '') + ' ' + (data.last || '')).trim();
+    data._subject = 'Coradot demo request: ' + (data.company || data.name);
+    data._template = 'table';
+    data._captcha = 'false';
+    fetch('https://formsubmit.co/ajax/hello@coradot.com', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (String(j.success) === 'true') { wrap.hidden = true; thanks.hidden = false; } else { throw new Error('not accepted'); } })
+      .catch(function () { errEl.hidden = false; })
+      .then(function () { btn.disabled = false; btn.textContent = label; });
+  });
+  document.getElementById('cd-reset').addEventListener('click', function () {
+    form.reset(); thanks.hidden = true; wrap.hidden = false;
+  });
+})();
+</script>
+</body>
+</html>

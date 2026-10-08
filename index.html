@@ -414,7 +414,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <div style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1"><label for="cd-msg" style="font-size: 14px; font-weight: 600">Anything we should know? <span style="font-weight: 400; color: #5A6372">(optional)</span></label><textarea id="cd-msg" name="message" rows="3" style="border: 1px solid #CFC7B6; border-radius: 8px; padding: 12px 14px; font-size: 16px; resize: vertical; background: #FFFFFF; color: #0F1C33"></textarea></div>
 <div style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 12px">
 <button type="submit" style="background: #0F1C33; color: #FFFFFF; border: none; border-radius: 10px; padding: 16px 24px; min-height: 52px; font-size: 17px; font-weight: 700; cursor: pointer; font-family: inherit">Request my demo</button>
-<p style="font-size: 13px; line-height: 1.5; color: #5A6372; margin: 0">We'll use these details only to schedule your demo and will never sell them. Your request reaches us by email through a form service. To have it deleted, email <a href="mailto:hello@coradot.com">hello@coradot.com</a>.</p>
+<p style="font-size: 13px; line-height: 1.5; color: #5A6372; margin: 0">We'll use these details only to schedule your demo and will never sell them. To have it deleted, email <a href="mailto:hello@coradot.com">hello@coradot.com</a>.</p>
 </div>
 <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <p id="cd-error" role="alert" hidden style="grid-column:1/-1;margin:0;color:#B42318;font-size:14px;line-height:1.5">We couldn't send your request just now. Please try again, or email <a href="mailto:hello@coradot.com">hello@coradot.com</a> and we'll set up your demo.</p>
@@ -503,8 +503,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
   var form = document.getElementById('cd-demo-form');
   var wrap = document.getElementById('cd-form-wrap');
   var thanks = document.getElementById('cd-thanks');
-  // Demo requests are emailed to hello@coradot.com through FormSubmit (no backend on this site).
-  // The first submission ever made from the live page triggers a one-time activation email to that address.
+  // Demo requests are sent to the Coradot app, which emails hello@coradot.com.
   var errEl = document.getElementById('cd-error');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -513,13 +512,10 @@ details[open] .faq-plus{transform:rotate(45deg)}
     btn.disabled = true; btn.textContent = 'Sending\u2026'; errEl.hidden = true;
     var data = {};
     new FormData(form).forEach(function (v, k) { if (k !== '_honey') data[k] = v; });
-    data.name = ((data.first || '') + ' ' + (data.last || '')).trim();
-    data._subject = 'Coradot demo request: ' + (data.company || data.name);
-    data._template = 'table';
-    data._captcha = 'false';
-    fetch('https://formsubmit.co/ajax/hello@coradot.com', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
-      .then(function (r) { return r.json(); })
-      .then(function (j) { if (String(j.success) === 'true') { wrap.hidden = true; thanks.hidden = false; } else { throw new Error('not accepted'); } })
+    data._honey = (form.elements['_honey'] && form.elements['_honey'].value) || '';
+    fetch('https://app.coradot.com/api/public/demo-request', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (x) { if (x.ok && x.j.ok) { wrap.hidden = true; thanks.hidden = false; } else { throw new Error('not accepted'); } })
       .catch(function () { errEl.hidden = false; })
       .then(function () { btn.disabled = false; btn.textContent = label; });
   });

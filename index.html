@@ -234,6 +234,105 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </div>
 </section>
 
+<!-- PICK HOW YOU WORK WITH US -->
+<section id="roles" style="background: #FFFFFF; border-top: 1px solid #E6E0D4; border-bottom: 1px solid #E6E0D4; padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="max-width: 760px; margin-bottom: 36px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 16px">Your role</div>
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; margin: 0 0 16px">Pick how you work with us.</h2>
+<p style="font-size: 17px; line-height: 1.65; color: #4A5568; margin: 0">Each pathway below shows the facts that actually apply to you, not one pitch for everyone.</p>
+</div>
+<div id="cd-role-picker" role="group" aria-label="Choose your role" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px"></div>
+<div style="background: #FAF7F1; border: 1px solid #E6E0D4; border-radius: 16px; padding: 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 340px; min-width: 0">
+<div id="cd-role-kicker" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0D7A7A; margin-bottom: 12px"></div>
+<h3 id="cd-role-title" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.2; margin: 0 0 14px"></h3>
+<p id="cd-role-copy" style="font-size: 16px; line-height: 1.65; color: #4A5568; margin: 0 0 20px"></p>
+<a id="cd-role-cta" href="#demo" style="display: inline-flex; align-items: center; background: #0F1C33; color: #FFFFFF; text-decoration: none; border-radius: 10px; padding: 14px 22px; min-height: 48px; font-size: 16px; font-weight: 700"></a>
+<p id="cd-role-note" style="font-size: 14px; line-height: 1.6; color: #4A5568; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #E6E0D4"></p>
+</div>
+<ul id="cd-role-points" style="flex: 1 1 320px; min-width: 0; list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; align-content: start"></ul>
+</div>
+</div>
+</div>
+</section>
+<script>
+(function () {
+  var ROLES = {
+  brokerage: { kicker:'For brokerages', title:'Broker approval before the file exists.',
+    copy:'Your agents start every deal in the current state-published form. You approve before it becomes a live file, and from there each side of the deal runs as one tracked workflow — parties, deadlines, documents, vendor scheduling and e-signature in one place. Delegate any file to a transaction coordinator without giving away oversight.',
+    cta:'Sign in to the Broker OS', href:'https://app.coradot.com/signin',
+    note:'<b>Pricing is simple and billed to the brokerage:</b> a monthly tier, $49 per agent seat, $49 per completed transaction, e-signature included.',
+    points:['Agents start in the state-published form, not a blank file','Nothing becomes a live file without broker approval','Buyer side and seller side each run as one tracked workflow','Delegate a file to a TC without giving up oversight'] },
+  professional: { kicker:'For agents and transaction coordinators', title:'The part after the offer is accepted, handled.',
+    copy:'You start in the state form you already use. From there every deadline, party, document and signature for that deal lives in one tracked workflow instead of a dozen email threads — the contingency clock and the signing order are set the moment the offer exists.',
+    cta:'Sign in to your workspace', href:'https://app.coradot.com/signin',
+    note:'Agents are limited to their licensed jurisdictions and their brokerage’s permissions; transaction coordinators get delegated access only.',
+    points:['Start in the state-published form you already use','Every deadline, party and document in one place','Contingency clock set the moment the offer exists','Delegate to a TC without losing broker oversight'] },
+  client: { kicker:'For buyers and sellers', title:'Your side of the deal, in one place.',
+    copy:'Finalized documents, plain milestones and what’s being asked of you next — not broker notes, internal drafts, or another party’s side of the deal.',
+    cta:'Sign in to your transaction', href:'https://app.coradot.com/signin',
+    note:'Buyers and sellers do not see broker notes, compliance queues, agent licensing records, billing or form-owner economics.',
+    points:['Finalized documents and signature records','Plain-language milestones and next steps','Requests from people actually on your transaction','A record you can return to after closing'] },
+  forms: { kicker:'For form owners and governing bodies', title:'Official forms, used the way you authorize.',
+    copy:'The Official Forms AI Partnership Program covers permissioned distribution, version control, attribution and usage reporting for associations, MLSs and licensing organizations — without protected content training outside models.',
+    cta:'Sign in to the Form Owner console', href:'https://app.coradot.com/signin',
+    note:'Government commissions get a public-protection and governance pathway, not a revenue-share pitch. Actual usage and earnings are visible only in the authorized form-owner portal.',
+    points:['Official Forms AI Partnership Program','Permission, version and revocation controls','Usage reporting and protected attribution','Separate commercial and regulatory pathways'] },
+  vendor: { kicker:'For inspectors, appraisers and service providers', title:'Receive the work, send back the update.',
+    copy:'You’re brought into a specific transaction, for a specific service order, with access limited to what that job requires.',
+    cta:'Talk to us about provider participation', href:'mailto:hello@coradot.com',
+    note:'Technology only: Coradot does not select, rank, supervise, verify or employ service providers, and does not collect referral commissions.',
+    points:['Scoped service requests with real due dates','You enter your own status and completion evidence','Access limited to the one transaction you’re on','Paid directly, outside Coradot’s custody'] },
+  settlement: { kicker:'For title, settlement and legal participants', title:'Coordinate the closing without losing the file.',
+    copy:'Receive authorized documents, exchange closing requirements and return milestones or evidence through a role-limited transaction workspace.',
+    cta:'Talk to us about settlement integrations', href:'mailto:hello@coradot.com',
+    note:'Escrow, deposits, settlement proceeds, commissions and disbursements stay with the authorized parties and settlement providers — Coradot never touches transaction funds.',
+    points:['Authorized document and milestone exchange','Title, closing and recording status updates','Role-limited communications and audit history','Integration pathways — in discussion with early partners'] },
+  lender: { kicker:'For mortgage companies and loan teams', title:'Share financing milestones, not the loan file.',
+    copy:'Connect approved loan-status events and requirements to the transaction while your own systems and privacy boundaries stay yours.',
+    cta:'Talk to us about lender participation', href:'mailto:hello@coradot.com',
+    note:'Coradot coordinates approved transaction milestones; it does not underwrite, originate, approve or fund mortgage loans.',
+    points:['Approved financing milestone updates — in discussion with early partners','Document and contingency coordination','Role-based access to transaction requirements','API pathways — in discussion with early partners'] },
+  partner: { kicker:'For MLS, data and technology partners', title:'Let’s talk about where this connects.',
+    copy:'We’re open to controlled integrations for listings, identity, forms and signatures — each with its own agreement and economics, even where one organization holds more than one role with us.',
+    cta:'Discuss a technology partnership', href:'mailto:hello@coradot.com',
+    note:'Distribution, integration and form-licensing relationships are handled as separate agreements, not bundled into one deal.',
+    points:['MLS and brokerage-system integrations — in discussion with early partners','Identity and license verification','Signature and records interoperability','Enterprise and API pathways — in discussion with early partners'] }
+};
+  var keys = Object.keys(ROLES), picker = document.getElementById('cd-role-picker');
+  function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+  function paint(k) {
+    var r = ROLES[k];
+    Array.prototype.forEach.call(picker.children, function (b) {
+      var on = b.getAttribute('data-role') === k;
+      b.setAttribute('aria-pressed', String(on));
+      b.style.borderColor = on ? '#0D7A7A' : '#E6E0D4';
+      b.style.boxShadow = on ? 'inset 0 0 0 1px #0D7A7A' : 'none';
+      b.style.fontWeight = on ? '700' : '500';
+    });
+    document.getElementById('cd-role-kicker').textContent = r.kicker;
+    document.getElementById('cd-role-title').textContent = r.title;
+    document.getElementById('cd-role-copy').textContent = r.copy;
+    var cta = document.getElementById('cd-role-cta'); cta.textContent = r.cta; cta.href = r.href;
+    document.getElementById('cd-role-note').innerHTML = r.note;
+    document.getElementById('cd-role-points').innerHTML = r.points.map(function (p) {
+      return '<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15.5px; line-height: 1.5"><span aria-hidden="true" style="color: #0D7A7A; font-weight: 700">\u2713</span><span>' + esc(p) + '</span></li>';
+    }).join('');
+  }
+  keys.forEach(function (k) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.setAttribute('data-role', k);
+    var t = ROLES[k].kicker.replace('For ', ''); b.textContent = t.charAt(0).toUpperCase() + t.slice(1);
+    b.style.cssText = 'background: #FFFFFF; border: 1px solid #E6E0D4; border-radius: 12px; padding: 14px 16px; min-height: 64px; text-align: left; font-family: inherit; font-size: 15px; line-height: 1.35; color: #0F1C33; cursor: pointer';
+    b.addEventListener('click', function () { paint(k); });
+    picker.appendChild(b);
+  });
+  paint(keys[0]);
+})();
+</script>
+
 <!-- TRUST -->
 <section id="trust" style="background: #1A2B4A; color: #FFFFFF; padding: 104px 24px">
 <div style="max-width: 1200px; margin: 0 auto">

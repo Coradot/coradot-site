@@ -59,6 +59,8 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <a href="#who" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">Who it's for</a>
 <a href="#trust" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">Integrity</a>
 <a href="#faq" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">FAQ</a>
+<a href="https://app.coradot.com/signin" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">Sign in</a>
+<a href="https://app.coradot.com/install" style="color: #C9D3E3; text-decoration: none; font-size: 15px; font-weight: 500">Get the app</a>
 <a href="#demo" style="background: #14A3A3; color: #0F1C33; text-decoration: none; font-size: 15px; font-weight: 700; padding: 12px 20px; border-radius: 8px; min-height: 44px; display: inline-flex; align-items: center">Book a demo</a>
 </div>
 </nav>
@@ -487,6 +489,8 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <span>© 2026 Coradot Technologies, Inc. All rights reserved.</span>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="https://app.coradot.com/signin" style="color: #C9D3E3">Sign in</a>
+<a href="https://app.coradot.com/install" style="color: #C9D3E3">Get the app</a>
 <a href="mailto:hello@coradot.com" style="color: #C9D3E3">Contact</a>
 </div>
 </div>
@@ -524,6 +528,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
     btn.disabled = true; btn.textContent = 'Sending\u2026'; errEl.hidden = true;
     var data = {};
     new FormData(form).forEach(function (v, k) { if (k !== '_honey') data[k] = v; });
+    try { var q = new URLSearchParams(location.search); ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function (k) { if (q.get(k)) data[k] = q.get(k); }); if (document.referrer) data.referrer = new URL(document.referrer).hostname; data.landing = location.pathname; } catch (_) {}
     data._honey = (form.elements['_honey'] && form.elements['_honey'].value) || '';
     fetch('https://app.coradot.com/api/public/demo-request', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
       .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })

@@ -30,6 +30,18 @@ details[open] .faq-plus{transform:rotate(45deg)}
 @media (prefers-reduced-motion: reduce){.cd-live{animation:none}}
 </style>
 <style>[hidden]{display:none !important}html{scroll-behavior:smooth}</style>
+<script>
+/* Google Analytics (measurement ID G-LFZK9JT8XX). Not loaded for visitors whose browser sends Global Privacy Control or Do Not Track. */
+(function () {
+  var gpc = navigator.globalPrivacyControl === true, dnt = navigator.doNotTrack === '1' || window.doNotTrack === '1';
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  if (gpc || dnt) return;
+  var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LFZK9JT8XX'; document.head.appendChild(s);
+  gtag('js', new Date());
+  gtag('config', 'G-LFZK9JT8XX');
+})();
+</script>
 </head>
 <body>
 
@@ -515,7 +527,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
     data._honey = (form.elements['_honey'] && form.elements['_honey'].value) || '';
     fetch('https://app.coradot.com/api/public/demo-request', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
       .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
-      .then(function (x) { if (x.ok && x.j.ok) { wrap.hidden = true; thanks.hidden = false; } else { throw new Error('not accepted'); } })
+      .then(function (x) { if (x.ok && x.j.ok) { wrap.hidden = true; thanks.hidden = false; if (window.gtag) gtag('event', 'generate_lead', { form: 'demo_request' }); } else { throw new Error('not accepted'); } })
       .catch(function () { errEl.hidden = false; })
       .then(function () { btn.disabled = false; btn.textContent = label; });
   });
@@ -523,6 +535,14 @@ details[open] .faq-plus{transform:rotate(45deg)}
     form.reset(); thanks.hidden = true; wrap.hidden = false;
   });
 })();
+</script>
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href]'); if (!a || !window.gtag) return;
+  var h = a.getAttribute('href') || '';
+  if (/app\.coradot\.com\/signin/.test(h)) gtag('event', 'login_click', { link_text: (a.textContent || '').trim().slice(0, 60) });
+  else if (/^mailto:/.test(h)) gtag('event', 'contact_click', { method: 'email' });
+});
 </script>
 </body>
 </html>

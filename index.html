@@ -31,12 +31,12 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </style>
 <style>[hidden]{display:none !important}html{scroll-behavior:smooth}</style>
 <script>
-/* Google Analytics (measurement ID G-LFZK9JT8XX). Not loaded for visitors whose browser sends Global Privacy Control or Do Not Track. */
+/* Google Analytics (measurement ID G-LFZK9JT8XX). Not loaded for visitors whose browser sends Global Privacy Control, as the privacy policy says. */
 (function () {
-  var gpc = navigator.globalPrivacyControl === true, dnt = navigator.doNotTrack === '1' || window.doNotTrack === '1';
+  var gpc = navigator.globalPrivacyControl === true;
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
-  if (gpc || dnt) return;
+  if (gpc) return;
   var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LFZK9JT8XX'; document.head.appendChild(s);
   gtag('js', new Date());
   gtag('config', 'G-LFZK9JT8XX');

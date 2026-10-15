@@ -1,0 +1,30 @@
+# Uptime monitor: every 10 minutes, check the website and the app. A failed run emails the repository owner.
+# Public repository, so the minutes are free. Scheduled runs can be delayed a few minutes by GitHub.
+name: Uptime
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check coradot.com and app.coradot.com
+        run: |
+          fail=0
+          get() { # url, expected status; two tries so one blip does not page anyone
+            for i in 1 2; do
+              code=$(curl -s -o /tmp/body -w '%{http_code}' --max-time 20 "$1" || echo 000)
+              [ "$code" = "$2" ] && return 0
+              sleep 15
+            done
+            echo "::error::$1 answered $code (expected $2)"; return 1
+          }
+          get https://coradot.com/ 200 || fail=1
+          get https://app.coradot.com/signin 200 || fail=1
+          get https://app.coradot.com/api/health 200 || fail=1
+          if ! grep -q '"ok":true' /tmp/body; then echo "::error::app health did not report ok: $(cat /tmp/body)"; fail=1; fi
+          exit $fail

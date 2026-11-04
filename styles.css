@@ -1,0 +1,38 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F3F6F0;color:#1F2A24;font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#1E7A52}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;flex-wrap:wrap}
+.logo{font-size:26px;font-weight:700;letter-spacing:.01em;color:#1F2A24;text-decoration:none}
+.menu{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.menu a{color:#1F2A24;text-decoration:none;padding:8px 14px;border-radius:999px}
+.menu a.on{background:#E3EBDD;font-weight:600}
+.menu a.cta{background:#1F2A24;color:#fff;font-weight:600;padding:11px 20px}
+h1{font-size:46px;line-height:1.05;margin:0 0 14px;font-weight:700}
+h2{font-size:30px;line-height:1.15;margin:0 0 12px;font-weight:700}
+.lede{font-size:19px;color:#566259;max-width:660px;margin:0 0 24px}
+.sec{padding:56px 0}
+.sec.alt{background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.box{background:#F3F6F0;border-radius:18px;padding:22px}
+.sec.alt .box{background:#F3F6F0}
+.box b{display:block;font-size:17px;margin-bottom:6px}
+.box p{margin:0;color:#566259;font-size:15px}
+.step{display:flex;gap:18px;align-items:flex-start;background:#fff;border-radius:18px;padding:18px 22px;margin-bottom:12px}
+.step i{font-style:normal;font-weight:700;color:#1E7A52;font-size:22px;min-width:26px}
+.btn{display:inline-block;background:#1E7A52;color:#fff;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:999px}
+.credit{background:#F2D46B;border-radius:24px;padding:28px 30px;margin:0 0 36px}
+.credit h2{margin:0 0 6px}
+table{border-collapse:collapse;width:100%;background:#fff;border-radius:14px;overflow:hidden;font-size:15px}
+th,td{padding:12px 14px;border-bottom:1px solid #E3EBDD;text-align:left;vertical-align:top}
+th{background:#1F2A24;color:#fff;font-weight:600}
+td:first-child{font-weight:600}
+.scroll{overflow-x:auto}
+details{background:#fff;border-radius:16px;padding:16px 22px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+details p{color:#566259;margin:8px 0 0}
+footer{padding:36px 0 44px;font-size:14px;color:#566259}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer a{color:#566259}
+@media(max-width:640px){h1{font-size:34px}h2{font-size:25px}.sec{padding:40px 0}}

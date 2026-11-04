@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Analytics 4 (G-LFZK9JT8XX): off for Global Privacy Control / Do Not Track; ads and Google signals off;
+     page address sent without its query string except utm_ campaign tags -->
+<script>
+(function () {
+  var n = navigator;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (n.globalPrivacyControl === true || n.doNotTrack === '1' || window.doNotTrack === '1') return;
+  window.gtag = gtag;
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+  var keep = new URLSearchParams();
+  try { new URLSearchParams(location.search).forEach(function (v, k) { if (/^utm_[a-z]+$/.test(k)) keep.set(k, v); }); } catch (e) {}
+  var q = keep.toString();
+  gtag('js', new Date());
+  gtag('config', 'G-LFZK9JT8XX', { page_location: location.origin + location.pathname + (q ? '?' + q : ''), allow_google_signals: false, allow_ad_personalization_signals: false });
+  var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LFZK9JT8XX';
+  document.head.appendChild(s);
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (/app\.coradot\.com\/signin/.test(h)) gtag('event', 'login_click');
+    else if (/^mailto:/.test(h)) gtag('event', 'contact_click', { method: 'email' });
+  });
+})();
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking Contract Deadlines and Contingencies — Coradot</title>
+<meta name="description" content="How brokerages track contract deadlines and contingencies on every file: what starts the clock, the common dates, reminders, amendments and closing records.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M25 8.5A11 11 0 1 0 25 23.5' fill='none' stroke='%231F2A24' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='8.5' r='2.6' fill='%231E7A52'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%231E7A52'/%3E%3Ccircle cx='25' cy='23.5' r='2.6' fill='%231F2A24'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://coradot.com/guides/contract-deadlines-and-contingencies.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Coradot">
+<meta property="og:title" content="Tracking Contract Deadlines and Contingencies — Coradot">
+<meta property="og:description" content="How brokerages track contract deadlines and contingencies on every file: what starts the clock, the common dates, reminders, amendments and closing records.">
+<meta property="og:url" content="https://coradot.com/guides/contract-deadlines-and-contingencies.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tracking Contract Deadlines and Contingencies — Coradot">
+<meta name="twitter:description" content="How brokerages track contract deadlines and contingencies on every file: what starts the clock, the common dates, reminders, amendments and closing records.">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How brokerages track contract deadlines and contingencies so nothing is missed","description":"How brokerages track contract deadlines and contingencies on every file: what starts the clock, the common dates, reminders, amendments and closing records.","url":"https://coradot.com/guides/contract-deadlines-and-contingencies.html","mainEntityOfPage":"https://coradot.com/guides/contract-deadlines-and-contingencies.html","inLanguage":"en-US","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","@id":"https://coradot.com/#organization","name":"Coradot","url":"https://coradot.com/"},"publisher":{"@type":"Organization","@id":"https://coradot.com/#organization","name":"Coradot","url":"https://coradot.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://coradot.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://coradot.com/guides.html"},{"@type":"ListItem","position":3,"name":"Tracking Contract Deadlines and Contingencies","item":"https://coradot.com/guides/contract-deadlines-and-contingencies.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What happens if a contingency deadline is missed?","acceptedAnswer":{"@type":"Answer","text":"It depends on how the contract is written. In some contracts the contingency is treated as waived; in others the other party gains the right to cancel. That is why each deadline should be tracked from the executed contract on the file rather than from a general timeline."}},{"@type":"Question","name":"Should contract deadlines be counted in calendar days or business days?","acceptedAnswer":{"@type":"Answer","text":"Use whatever the contract says. Many residential contracts count calendar days unless they state otherwise, while others use business days or set a specific time of day. Confirm the definition before calculating any date."}},{"@type":"Question","name":"Who should track deadlines at a brokerage?","acceptedAnswer":{"@type":"Answer","text":"The agent owns the deadlines on their file, a transaction coordinator often manages them day to day and the broker oversees them across all files. All three should be looking at the same dates in the same place."}}]}</script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav"><a class="logo" href="/">Coradot</a><div class="menu"><a href="/">Home</a><a href="/product.html">Product</a><a href="/pricing.html">Pricing</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="cta" href="/#demo">Request a demo</a></div></nav>
+</div>
+<main class="sec"><div class="wrap"><article class="article">
+  <p class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/guides.html">Guides</a> &rsaquo; Tracking Contract Deadlines and Contingencies</p>
+  <h1>How brokerages track contract deadlines and contingencies so nothing is missed</h1>
+  <p class="lede">A missed deadline can cost a buyer their deposit or a seller their sale. Here is how to build a deadline process that holds on every file.</p>
+  <p class="meta"><time datetime="2026-11-04">November 4, 2026</time></p>
+  <p>Almost every residential purchase contract is a schedule. From the moment it is ratified, dates start running: when the deposit is due, how long the buyer has to inspect, when financing must be approved, when condo documents must be delivered and reviewed, when the parties settle. Many contracts treat those dates as firm, and a contingency that isn't acted on in time can lapse, be treated as waived or give the other side the right to cancel, depending on how your state's contract is written. Brokerages that don't miss dates don't rely on memory. They run a process.</p>
+  <h2>Know what starts the clock</h2>
+  <p>Every deadline counts from something. In most contracts that is the date of ratification, acceptance or final signature and delivery, often called Day 0. Get that date right, in writing, on the file, before calculating anything else. If the contract counts calendar days, weekends count; if it counts business days, they don't, and the contract or state law will say which holidays are excluded. Note whether a deadline ends at a specific time of day.</p>
+  <p>Your state's contract and your brokerage's policies set the deadlines. The job of your process is to read them from the actual executed contract on each file, not from a template of typical timelines.</p>
+  <h2>The deadlines most residential files carry</h2>
+  <ul><li><b>Earnest money deposit:</b> when the deposit must be delivered and to whom, and when the holder must place it in escrow or trust under your state's rules.</li><li><b>Home inspection:</b> the inspection period, the deadline to deliver a repair request and the seller's response window.</li><li><b>Lead-based paint:</b> for homes built before 1978, federal rules give buyers a 10-day opportunity for a risk assessment or inspection unless the parties agree to a different period or the buyer waives it in writing.</li><li><b>Financing:</b> when the buyer must apply, when the loan commitment is due and when the financing contingency expires.</li><li><b>Appraisal:</b> the deadline for the appraisal and for any response if it comes in below the contract price.</li><li><b>Condo or HOA documents:</b> delivery of the resale package and the buyer's review or rescission period that follows it.</li><li><b>Title:</b> delivery of the title commitment and the window to object to title issues.</li><li><b>Sale of the buyer's home:</b> if the contract depends on it, along with any kick-out notice period.</li><li><b>Final walk-through and settlement.</b></li></ul>
+  <p>Not every file has every item, and some have others, such as a well and septic inspection, a survey or a lease review on a tenant-occupied property. That is why each file's checklist should follow from its jurisdiction, transaction type and property type.</p>
+  <h2>Calculate once, then recalculate on every change</h2>
+  <p>Deadlines move. An amendment extends the inspection period, a contingency is removed early, settlement slips a week. The most common way a date gets missed is that it was correct on day one and stale by day twenty. Each time an amendment or addendum is executed, update the affected dates on the file that day and tell the people who rely on them. When a contingency is removed, mark it removed, record the document that removed it and stop the reminders. If the parties later agree to reopen it, reopen it the same way, on the record.</p>
+  <h2>Make every date visible to everyone who acts on it</h2>
+  <p>A deadline the agent knows about and the transaction coordinator doesn't is half-tracked. Show the dates on the file itself, where the agent, the coordinator and the broker see the same list. Clients should see the dates that ask something of them: the deposit, the inspection, the loan application, the walk-through. Lenders and title need the financing and settlement dates. One shared source beats five calendars kept in sync by hand.</p>
+  <h2>Remind early and escalate before the deadline</h2>
+  <p>Set reminders with enough lead time to act. A reminder on the day the inspection period ends is a notice of a missed opportunity. A practical pattern is a reminder when the period opens, another a few days before it closes and a final one the day before. Give the managing broker a daily view of what is due across all active files, so a file with a deadline approaching and no activity against it stands out without anyone opening every file.</p>
+  <h2>Document how each contingency ended</h2>
+  <p>When a file closes, the record should show how every contingency was resolved: satisfied, removed by a signed document, waived or used to terminate. That record protects the client, the agent and the brokerage if anyone later asks what happened and when. It also makes broker review faster, because the reviewer can see at a glance that nothing was left open. Our <a href="/guides/broker-compliance-file-review-checklist.html">broker compliance and file review checklist</a> covers what else to confirm before settlement.</p>
+  <h2>A deadline routine for transaction coordinators</h2>
+  <ol><li>Confirm the ratification date and how the contract counts days.</li><li>Enter every deadline from the executed contract and each addendum.</li><li>Share the dates with the agent, the client, the lender and title.</li><li>Set reminders ahead of each date, not on it.</li><li>Update dates the same day any amendment is signed.</li><li>Record how each contingency was resolved before the file goes to review.</li></ol>
+  <p>Run the same routine on every file and the deadlines stop depending on who happens to be handling it. For the wider process around these dates, see <a href="/guides/real-estate-transaction-management.html">transaction management from signed agreement to closing</a>.</p>
+  <div class="helps">
+  <h2>How Coradot helps</h2>
+  <p>From agreement to closing. Everything connected. In Coradot, the checklist for each Stream follows its jurisdiction, whether it is a listing or a purchase, and the property type. Deadlines are visible on the Stream to the agent, the transaction coordinator and the broker, and daily reminders go out ahead of what is due. Contingencies are cleared on the file and can be reopened when the parties agree, and brokers review at the checkpoints that matter, so every file closes with a clear record of how each date was met.</p>
+  <p class="actions"><a class="btn" href="/#demo">Request a demo</a> <a href="/product.html">See how a Stream runs</a></p>
+  </div>
+  <h2>Frequently asked questions</h2>
+  <h3>What happens if a contingency deadline is missed?</h3>
+  <p>It depends on how the contract is written. In some contracts the contingency is treated as waived; in others the other party gains the right to cancel. That is why each deadline should be tracked from the executed contract on the file rather than from a general timeline.</p>
+  <h3>Should contract deadlines be counted in calendar days or business days?</h3>
+  <p>Use whatever the contract says. Many residential contracts count calendar days unless they state otherwise, while others use business days or set a specific time of day. Confirm the definition before calculating any date.</p>
+  <h3>Who should track deadlines at a brokerage?</h3>
+  <p>The agent owns the deadlines on their file, a transaction coordinator often manages them day to day and the broker oversees them across all files. All three should be looking at the same dates in the same place.</p>
+</article></div></main>
+<section class="sec alt"><div class="wrap">
+  <h2>More guides</h2>
+  <div class="grid" style="margin-top:20px">
+    <a class="box card" href="/guides/real-estate-transaction-management.html"><b>Real Estate Transaction Management for Brokerages</b><p>What a brokerage's transaction process should cover, step by step, from the signed agreement to a complete, locked file.</p></a>
+    <a class="box card" href="/guides/broker-compliance-file-review-checklist.html"><b>Broker Compliance and File Review Checklist</b><p>A checklist a managing broker or compliance lead can run on every listing and purchase file, from the signed agreement to commission.</p></a>
+    <a class="box card" href="/guides/keeping-every-party-aligned-through-closing.html"><b>Keep Agents, Lenders and Title Aligned to Closing</b><p>One directory, shared facts, clear milestones and logged messages: how brokerages keep every party in step from contract to settlement.</p></a>
+    <a class="box card" href="/guides/e-signatures-and-document-packages.html"><b>E-Signatures and Document Packages for Brokerages</b><p>What to require from electronic signatures and document packages so every executed file is complete, provable and easy to review.</p></a>
+  </div>
+</div></section>
+<footer><div class="wrap"><div class="row">
+  <span>&copy; 2026 Coradot Technologies, Inc. &middot; 8 The Green, Ste R, Dover, DE 19901</span>
+  <span style="display:flex;gap:20px;flex-wrap:wrap"><a href="/guides.html">Guides</a><a href="https://app.coradot.com/legal#privacy">Privacy</a><a href="https://app.coradot.com/legal#terms">Terms</a><a href="mailto:hello@coradot.com">hello@coradot.com</a></span>
+</div></div></footer>
+
+</body>
+</html>

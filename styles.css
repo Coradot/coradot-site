@@ -36,3 +36,19 @@ footer{padding:36px 0 44px;font-size:14px;color:#566259}
 footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 footer a{color:#566259}
 @media(max-width:640px){h1{font-size:34px}h2{font-size:25px}.sec{padding:40px 0}}
+.article{max-width:760px}
+.article h1{font-size:40px}
+.article h2{font-size:26px;margin-top:40px}
+.article h3{font-size:18px;margin:24px 0 6px}
+.article p,.article li{font-size:17px}
+.article ul,.article ol{padding-left:22px;margin:0 0 16px}
+.article li{margin-bottom:8px}
+.crumbs{font-size:14px;color:#566259;margin:0 0 18px}
+.crumbs a{color:#566259}
+.meta{font-size:14px;color:#566259;margin:-12px 0 28px}
+.helps{background:#fff;border-radius:18px;padding:6px 26px 22px;margin-top:40px}
+.actions .btn{margin-right:14px}
+a.card{display:block;text-decoration:none;color:#1F2A24}
+.sec:not(.alt) a.card{background:#fff}
+a.card:hover b{color:#1E7A52}
+@media(max-width:640px){.article h1{font-size:31px}.article h2{font-size:23px}.helps{padding:4px 18px 18px}}

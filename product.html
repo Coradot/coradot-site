@@ -2,6 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google Analytics 4 (G-LFZK9JT8XX): off for Global Privacy Control / Do Not Track; ads and Google signals off;
+     page address sent without its query string except utm_ campaign tags -->
+<script>
+(function () {
+  var n = navigator;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (n.globalPrivacyControl === true || n.doNotTrack === '1' || window.doNotTrack === '1') return;
+  window.gtag = gtag;
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+  var keep = new URLSearchParams();
+  try { new URLSearchParams(location.search).forEach(function (v, k) { if (/^utm_[a-z]+$/.test(k)) keep.set(k, v); }); } catch (e) {}
+  var q = keep.toString();
+  gtag('js', new Date());
+  gtag('config', 'G-LFZK9JT8XX', { page_location: location.origin + location.pathname + (q ? '?' + q : ''), allow_google_signals: false, allow_ad_personalization_signals: false });
+  var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LFZK9JT8XX';
+  document.head.appendChild(s);
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (/app\.coradot\.com\/signin/.test(h)) gtag('event', 'login_click');
+    else if (/^mailto:/.test(h)) gtag('event', 'contact_click', { method: 'email' });
+  });
+})();
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Product — Coradot</title>
 <meta name="description" content="How a Coradot Stream runs from signed agreement to close.">
